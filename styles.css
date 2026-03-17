@@ -192,7 +192,7 @@ header {
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 
-body[data-page="home"] .hero.has-bg { --hero-bg: url('images/truck.114.png'); }
+body[data-page="home"] .hero.has-bg { --hero-bg: url('images/herobg.png'); }
 
 .panel {
   background: var(--panel);
