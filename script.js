@@ -38,24 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const mapGate = document.querySelector('[data-map-gate]');
-  if (mapGate) {
-    const enableBtn = mapGate.querySelector('button');
-    const mapContainer = mapGate.querySelector('[data-map-container]');
-    const renderMap = () => {
-      if (!mapContainer) return;
-      mapContainer.innerHTML = '<iframe class="map-iframe" title="DG Express Transports location" src="https://www.google.com/maps?q=5614+W+Grand+Parkway+S+ste+102+Richmond+TX+77406&output=embed" loading="lazy" allowfullscreen></iframe>';
-    };
-    if (localStorage.getItem('mapsConsent') === 'granted') {
-      renderMap();
-      mapGate.classList.add('consented');
-    }
-    enableBtn?.addEventListener('click', () => {
-      localStorage.setItem('mapsConsent', 'granted');
-      renderMap();
-      mapGate.classList.add('consented');
-    });
-  }
 
   document.querySelectorAll('[data-cookie-toggle]').forEach(toggle => {
     const key = toggle.dataset.cookieToggle;

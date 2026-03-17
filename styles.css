@@ -278,6 +278,8 @@ body[data-page="home"] .hero.has-bg { --hero-bg: url('images/herobg.png'); }
 }
 
 .step {
+  display: flex;
+  flex-direction: column;
   background: rgba(255,255,255,0.03);
   border: 1px dashed var(--line);
   border-radius: var(--radius);
@@ -294,7 +296,12 @@ body[data-page="home"] .hero.has-bg { --hero-bg: url('images/herobg.png'); }
   background: rgba(246, 194, 57, 0.15);
   color: var(--accent);
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.step strong {
+  display: block;
+  margin-bottom: 6px;
 }
 
 .contact-card {
@@ -393,6 +400,15 @@ textarea { min-height: 140px; resize: vertical; }
 .utility-links { display: flex; gap: 12px; flex-wrap: wrap; }
 
 .footer small { color: var(--muted); }
+
+.hazmat-diamond {
+  width: 18px;
+  height: 18px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
 
 .highlight-panel {
   background: linear-gradient(135deg, rgba(246, 194, 57, 0.08), rgba(255, 159, 28, 0.12));
