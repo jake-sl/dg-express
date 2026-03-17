@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote | DG Express Transports</title>
+  <meta name="description" content="Request a freight quote from DG Express Transports. Provide your commodity, hazmat class, and lane details for DOT-compliant hazmat or box-truck transportation across the U.S.">
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DG Express Transports">
+  <meta property="og:url" content="https://www.dgexpresstransports.com/quote.html">
+  <meta property="og:title" content="Get a Quote | DG Express Transports">
+  <meta property="og:description" content="Request a freight quote from DG Express Transports. Provide your commodity, hazmat class, and lane details for DOT-compliant hazmat or box-truck transportation across the U.S.">
+  <meta property="og:image" content="https://www.dgexpresstransports.com/images/logos/preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Get a Quote | DG Express Transports">
+  <meta name="twitter:description" content="Request a freight quote from DG Express Transports. Provide your commodity, hazmat class, and lane details for DOT-compliant hazmat or box-truck transportation across the U.S.">
+  <meta name="twitter:image" content="https://www.dgexpresstransports.com/images/logos/preview.jpg">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.dgexpresstransports.com/quote.html">
+  <!-- Google Analytics: replace G-XXXXXXXXXX with your Measurement ID and uncomment -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="quote">
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img src="images/logos/logo-wordmark.svg" alt="DG Express wordmark" style="height:96px;">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation"><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="services.html" data-page="services">Services</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="careers.html" data-page="careers">Careers</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a class="btn btn-primary" href="quote.html" data-page="quote">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Freight quote</div>
+        <h1>Get a Freight Quote</h1>
+        <p>Tell us what you’re shipping — commodity, hazmat class, origin, and destination — and we’ll respond with a rate and next steps.</p>
+        <div class="contact-card" style="margin-top:16px;">
+          <div class="contact-item"><small>Call</small><a href="tel:9124341499">912-434-1499</a></div>
+          <div class="contact-item"><small>Email</small><a href="mailto:support@dgexpresstransports.com">support@dgexpresstransports.com</a></div>
+        </div>
+      </div>
+      <div class="panel form-panel">
+        <h3>Quote request</h3>
+        <p class="muted" style="margin-bottom:18px;"><strong>Have ready:</strong> Proper shipping name (if hazmat), UN number, hazmat class &amp; packing group, origin/destination zip codes, estimated weight, and any special handling needs (temperature, pallets, equipment requirements).</p>
+        <form action="https://formspree.io/f/FORMSPREE_ID_NEEDED" method="POST" data-async data-success="Thanks - we received your request and will contact you soon." data-error="Something went wrong. Please try again, or contact us by phone/email.">
+          <div>
+            <label for="quote-name">Full name *</label>
+            <input id="quote-name" name="fullName" type="text" required>
+          </div>
+          <div>
+            <label for="quote-company">Company</label>
+            <input id="quote-company" name="company" type="text">
+          </div>
+          <div>
+            <label for="quote-email">Email *</label>
+            <input id="quote-email" name="email" type="email" required>
+          </div>
+          <div>
+            <label for="quote-phone">Phone</label>
+            <input id="quote-phone" name="phone" type="tel">
+          </div>
+          <div>
+            <label for="quote-hazmat">Is this a hazmat shipment? *</label>
+            <select id="quote-hazmat" name="hazmat" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="yes">Yes &mdash; hazardous materials</option>
+              <option value="no">No &mdash; general freight</option>
+              <option value="unsure">Not sure</option>
+            </select>
+          </div>
+          <div>
+            <label for="quote-commodity">Commodity description / UN number</label>
+            <input id="quote-commodity" name="commodity" type="text" placeholder="e.g., Diesel fuel, UN 1202, Class 3, PG III">
+          </div>
+          <div>
+            <label for="quote-equipment">Equipment type needed</label>
+            <select id="quote-equipment" name="equipment">
+              <option value="" disabled selected>Select if known</option>
+              <option value="cargo-tank">Cargo tank</option>
+              <option value="dry-van-hazmat">Dry van (hazmat placarded)</option>
+              <option value="flatbed">Flatbed</option>
+              <option value="box-truck">Box truck</option>
+              <option value="other">Other / not sure</option>
+            </select>
+          </div>
+          <div>
+            <label for="quote-pickup">Pickup city/state *</label>
+            <input id="quote-pickup" name="pickup" type="text" required>
+          </div>
+          <div>
+            <label for="quote-drop">Destination city/state *</label>
+            <input id="quote-drop" name="delivery" type="text" required>
+          </div>
+          <div>
+            <label for="quote-date">Preferred pickup date</label>
+            <input id="quote-date" name="pickupDate" type="date">
+          </div>
+          <div>
+            <label for="quote-weight">Estimated weight (lbs)</label>
+            <input id="quote-weight" name="weight" type="text" placeholder="e.g., 42,000 lbs">
+          </div>
+          <div>
+            <label for="quote-notes">Additional shipment details</label>
+            <textarea id="quote-notes" name="notes" placeholder="Packing group, temperature requirements, number of pallets, special handling, or anything else we should know"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send request</button>
+          <div class="form-status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="top">
+        <div>
+          <div class="brand" style="margin-bottom:10px;">
+            <img src="images/logos/logo-symbol.svg" alt="DG Express logo symbol" style="height:96px;">
+          </div>
+          <p class="muted">DOT-authorized hazmat and box-truck carrier. Safety-first freight operations, every lane, every load.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="contact-card">
+            <div class="contact-item"><small>Phone</small><a href="tel:9124341499">912-434-1499</a></div>
+            <div class="contact-item"><small>Email</small><a href="mailto:support@dgexpresstransports.com">support@dgexpresstransports.com</a></div>
+            <div class="contact-item"><small>Address</small><span>5614 W Grand Parkway S ste 102, Richmond, 77406, Texas, United States</span></div>
+          </div>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <div class="quick-links">
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="careers.html">Careers</a>
+            <a href="quote.html">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+      <div class="utility-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookie Preferences</a>
+      </div>
+      <small>DG Express Transports LLC <span data-year></span> &copy; All rights reserved. USDOT&nbsp;4347866 &nbsp;|&nbsp; MC-1699598 &nbsp;|&nbsp; FMCSA Authorized Carrier</small>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
