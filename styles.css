@@ -71,7 +71,8 @@ header {
   text-transform: uppercase;
 }
 
-.brand img { height: 36px; }
+.brand .logo-wordmark { height: 108px; }
+.brand .logo-symbol   { height: 36px; display: none; }
 
 .nav-links {
   display: flex;
@@ -521,6 +522,8 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 860px) {
+  .brand .logo-wordmark { display: none; }
+  .brand .logo-symbol   { display: block; }
   .nav-links {
     position: absolute;
     left: 0; right: 0;
